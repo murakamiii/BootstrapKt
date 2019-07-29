@@ -9,6 +9,6 @@ internal class BootstrapKtTest {
     @Test
     fun exampleAdd() {
         assertEquals(2, exampleAdd(1))
-        assertEquals(2, exampleAdd(2))
+        assertEquals(3, exampleAdd(2))
     }
 }
