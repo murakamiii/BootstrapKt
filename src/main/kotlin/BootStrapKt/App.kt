@@ -4,6 +4,7 @@
 package BootStrapKt
 
 import BootStrapKt.model.bootstrapMean
+import BootStrapKt.model.bootstrapMeanPercentile
 
 class App {
     val greeting: String
@@ -40,4 +41,7 @@ suspend fun main(args: Array<String>) {
     val end = System.currentTimeMillis()
     println("処理時間: ${end - start}ms")
     println("結果: ${res.sum()/res.size} (元サンプル: ${sample.sum()/sample.size})")
+    val ptile = bootstrapMeanPercentile(sample, 100_000)
+    println("2.5%: ${ptile.percent(2.5)} 50%: ${ptile.percent(50.0)} 97.5%: ${ptile.percent(97.5)}")
+
 }
