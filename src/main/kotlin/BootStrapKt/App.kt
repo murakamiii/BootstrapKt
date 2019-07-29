@@ -12,7 +12,7 @@ class App {
         }
 }
 
-fun main(args: Array<String>) {
+suspend fun main(args: Array<String>) {
     val sample = listOf( // n=200
             10.0, 20.0, 12.0, 23.5, 14.9, 32223.0, 32.0, 22.2, 1.2, 23.0,
             10.0, 20.0, 12.0, 23.5, 14.9, 32223.0, 32.0, 22.2, 1.2, 23.0,
